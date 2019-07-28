@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/atlas/atlas",
+    "pages/choiceness/choiceness",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "阿秋妹妹",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

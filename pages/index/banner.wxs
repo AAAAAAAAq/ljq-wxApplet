@@ -1,0 +1,45 @@
+var urlCharge = function (id, paremsId) {
+  if (id == '100') {
+    return '../videoDetail/videoDetail?id=' + paremsId
+  }
+  if (id == '101') {
+    return '../videoDetail/videoDetail?id=' + paremsId
+  }
+  if (id == '103') {
+    return '../albumDetail/albumDetail?id=' + paremsId
+  }
+  if (id == '104') {
+    return '../specialDetail/specialDetail?id=' + paremsId
+  }
+  if (id == '105') {
+    return '../readDetail/readDetail?id=' + paremsId
+  }
+  if (id == '106') {
+    return '../audioDetail/audioDetail?id=' + paremsId
+  }
+}
+var typeId = function (id) {
+  if (id == '100') {
+    return '直播'
+  }
+  if (id == '101') {
+    return '视频'
+  }
+  if (id == '103') {
+    return '图集'
+  }
+  if (id == '104') {
+    return '精选'
+  }
+  if (id == '105') {
+    return '专题'
+  }
+  if (id == '106') {
+    return '电台'
+  }
+  return '壁纸'
+}
+var dateDeal = function (date) {
+   return date.split(" ")[0]
+}
+module.exports = { urlCharge: urlCharge, dateDeal: dateDeal, typeId: typeId}
