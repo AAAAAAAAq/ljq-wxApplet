@@ -1,16 +1,43 @@
 {
   "pages": [
-    "pages/atlas/atlas",
-    "pages/choiceness/choiceness",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/video/video"
+    "pages/live/live",
+    "pages/audioDetail/audioDetail",
+    "pages/albumDetail/albumDetail",
+    "pages/information/information",
+    "pages/subject/subject",
+    "pages/concentration/concentration",
+    "pages/album/album",
+    "pages/readDetail/readDetail",
+    "pages/specialDetail/specialDetail",
+    "pages/radioList/radioList",
+    "pages/radioStation/radioStation",
+    "pages/videos/videos",
+    "pages/videoDetail/videoDetail",
+    "pages/logs/logs"
   ],
+  "tabBar": {
+    "selectedColor": "#79191d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/common/tab_home_selected.png",
+        "iconPath": "images/common/tab_home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "selectedIconPath": "images/common/tab_Information_selected.png",
+        "iconPath": "images/common/tab_Information.png",
+        "text": "资讯"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "阿秋妹妹",
-    "navigationBarTextStyle": "white"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
 }

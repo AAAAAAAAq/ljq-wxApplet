@@ -1,6 +1,6 @@
 //app.js
 App({
-  url: 'https://www.maliboo.com.cn:8443',
+  hostUrl:'https://www.maliboo.com.cn:8443',
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

@@ -1,6 +1,6 @@
 var urlCharge = function (id, paremsId) {
   if (id == '100') {
-    return '../videoDetail/videoDetail?id=' + paremsId
+    return '../live/live'
   }
   if (id == '101') {
     return '../videoDetail/videoDetail?id=' + paremsId
@@ -18,28 +18,24 @@ var urlCharge = function (id, paremsId) {
     return '../audioDetail/audioDetail?id=' + paremsId
   }
 }
-var typeId = function (id) {
-  if (id == '100') {
-    return '直播'
+var shouye = function (id) {
+  if(id == '100') {
+    return '../live/live'
   }
   if (id == '101') {
-    return '视频'
+    return '../videos/videos'
   }
   if (id == '103') {
-    return '图集'
+    return '../album/album'
   }
   if (id == '104') {
-    return '精选'
+    return '../concentration/concentration'
   }
   if (id == '105') {
-    return '专题'
+    return '../subject/subject'
   }
   if (id == '106') {
-    return '电台'
+    return '../radioStation/radioStation'
   }
-  return '壁纸'
 }
-var dateDeal = function (date) {
-   return date.split(" ")[0]
-}
-module.exports = { urlCharge: urlCharge, dateDeal: dateDeal, typeId: typeId}
+module.exports = { urlCharge: urlCharge, shouye: shouye }
